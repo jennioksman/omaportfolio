@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import me from '../assets/me.jpg'
 import computer from '../assets/computer.jpg'
 import web from '../assets/web.jpg'
-import { Navigation } from './navigation'
+import { Navigation } from './skills'
 
 function Mie() {
     const cardData = [
