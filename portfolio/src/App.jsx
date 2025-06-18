@@ -38,7 +38,6 @@ function App() {
 
   return (   
     <div>
-      <h1>Tervetuloa!</h1>
       <RouterProvider router={myRouter}/>
     </div>
   )
@@ -46,19 +45,24 @@ function App() {
 
 function NavigationBar() {
   return(
-    <div className='nav'>
-      <Link to={'/'}> Home </Link>
-      <Link to={'/me'}> Minä </Link>
-      <Link to={'/projects'}> Projektini </Link>
-      <Link to={'/skills'}> Osaamiseni </Link>
-      <Outlet/>
+    <div>
+        <div className='nav'>
+          <Link to={'/'}> Home </Link>
+          <Link to={'/me'}> Minä </Link>
+          <Link to={'/projects'}> Projektini </Link>
+          <Link to={'/skills'}> Osaamiseni </Link>
+        </div>
+    <Outlet/>
     </div>
   )
 }
 
 function Home1() {
   return (
-    <Home/>
+    <div>
+      console.log("Home1 näkyy")
+      <Home/>
+    </div>
   )
 }
 

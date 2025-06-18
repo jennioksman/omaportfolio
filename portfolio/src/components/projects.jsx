@@ -5,3 +5,5 @@ function Projects() {
         <h1>Esittely prjoketeistani</h1>
     )
 }
+
+export default Projects
