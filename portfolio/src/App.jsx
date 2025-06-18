@@ -45,10 +45,10 @@ function NavigationBar() {
   return(
     <div>
         <div className='nav'>
-          <Link to={'/'}> Home </Link>
-          <Link to={'/me'}> Minä </Link>
-          <Link to={'/projects'}> Projektini </Link>
-          <Link to={'/skills'}> Osaamiseni </Link>
+          <Link to={'/'} className='nav-link-custom'> Koti </Link>
+          <Link to={'/me'} className='nav-link-custom'> Minä </Link>
+          <Link to={'/projects'} className='nav-link-custom'> Projektini </Link>
+          <Link to={'/skills'} className='nav-link-custom'> Osaamiseni </Link>
         </div>
     <Outlet/>
     </div>

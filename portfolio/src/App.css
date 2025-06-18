@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 2px solid black;
 }
 
 .nav a:link {
@@ -12,6 +13,17 @@
     font-size: 20px;
 }
 
+.nav-link-custom {
+  color: black;
+}
+
+.homeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
 .card {
   border: 1px solid black;
   border-radius: 5px;
@@ -19,8 +31,12 @@
   padding: 5px;
 }
 
-
-
 .cardimg {
   border-radius: 5px;
+}
+
+.cardButton {
+  background-color: beige;
+  color: black;
+  border: 1px solid black;
 }
