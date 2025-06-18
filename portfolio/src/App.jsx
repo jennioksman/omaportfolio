@@ -2,7 +2,6 @@
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container';
 import './App.css'
 import Projects from './components/projects.jsx'
 import Home from './components/home.jsx'
@@ -50,10 +49,10 @@ function NavigationBar() {
   return(
     <div className='navDiv'>
        <Navbar expand="md" className="nav">
-          <Navbar.Brand as={Link} to="/">Koti</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+              <Nav.Link as={Link} to="/">Koti</Nav.Link>
               <Nav.Link as={Link} to="/me">Minä</Nav.Link>
               <Nav.Link as={Link} to="/projects">Projektini</Nav.Link>
               <Nav.Link as={Link} to="/skills">Osaamiseni</Nav.Link>

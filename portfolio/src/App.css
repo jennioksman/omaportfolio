@@ -3,7 +3,8 @@
 .nav {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: center;
+  padding-left: 35%;
   background-color: rgb(235, 235, 235); 
   width: 100%;
 }
@@ -37,6 +38,13 @@
   background-color: rgb(235, 235, 235);
   color: black;
   border: 1px solid black;
+  margin: 5%;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .footer {
