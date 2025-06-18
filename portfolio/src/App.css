@@ -1,9 +1,11 @@
 
+
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: rgb(235, 235, 235); 
+  width: 100%;
 }
 
 .nav a:link {
@@ -11,10 +13,6 @@
     padding: 10px;
     margin: 20px;
     font-size: 20px;
-}
-
-.nav-link-custom {
-  color: black;
 }
 
 .homeHeader {
@@ -36,7 +34,13 @@
 }
 
 .cardButton {
-  background-color: beige;
+  background-color: rgb(235, 235, 235);
   color: black;
   border: 1px solid black;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
 }

@@ -68,7 +68,7 @@ function Cardie({ picture, title, text, buttontext }) {
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{text}</Card.Text>
-                <Button className='cardButton' variant="primary">{buttontext}</Button>
+                <Button className="cardButton" variant="primary">{buttontext}</Button>
             </Card.Body>
         </Card>
     )
