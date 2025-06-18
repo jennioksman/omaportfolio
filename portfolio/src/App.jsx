@@ -1,7 +1,6 @@
-import { useState } from 'react'
+
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Nav from 'react-bootstrap/Nav'
 import Projects from './components/projects.jsx'
 import Home from './components/home.jsx'
 import Mie from './components/me.jsx'
@@ -35,11 +34,10 @@ const myRouter = createBrowserRouter([
 
 
 function App() {
-
-  return (   
-    <div>
-      <RouterProvider router={myRouter}/>
-    </div>
+  return (
+    
+    <RouterProvider router={myRouter} />
+    
   )
 }
 
@@ -60,7 +58,6 @@ function NavigationBar() {
 function Home1() {
   return (
     <div>
-      console.log("Home1 näkyy")
       <Home/>
     </div>
   )
