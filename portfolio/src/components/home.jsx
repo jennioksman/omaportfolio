@@ -1,4 +1,4 @@
-
+import { useNavigate } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -62,13 +62,32 @@ function Home() {
 }
 
 function Cardie({ picture, title, text, buttontext }) {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        // Esimerkissä ohjataan aina projektit-sivulle, mutta voit käyttää eri osoitteita tarpeen mukaan
+        if (title === 'Projektini') {
+            navigate('/projects');
+        } else if (title === 'Kuka Jenni?') {
+            navigate('/about');
+        } else if (title === 'Osaamiseni') {
+            navigate('/skills');
+        }
+    }
+
     return (
         <Card>
             <Card.Img className='cardimg' variant="top" src={picture} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{text}</Card.Text>
-                <Button className="cardButton" variant="primary">{buttontext}</Button>
+                <Button 
+                    className="cardButton" 
+                    variant="primary"
+                    onClick={handleClick}>
+                    {buttontext}
+                </Button>
             </Card.Body>
         </Card>
     )

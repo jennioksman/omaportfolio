@@ -3,9 +3,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import me from '../assets/me.jpg'
-import computer from '../assets/computer.jpg'
-import skills from '../assets/skills.png'
+import ball from '../assets/ball.jpg'
+import matikkamango from '../assets/matikkamango.png'
+import kentzu from '../assets/kentzu.png'
+import movie from '../assets/movie.jpg'
+import crossfit from '../assets/crossfit.jpg'
+import town from '../assets/town.jpg'
 
 function Projects() {
 
@@ -20,43 +23,43 @@ function CardContainer() {
 
     const projectCardData = [
         {
-            picture: me,
+            picture: ball,
             title: 'Digitaalisuus ja tekijänoikeudet',
             text: 'Tämä sivu on ensimmäisen web-kurssini loppu työ. Teknologioina on käytetty vain HTML5 ja CSS',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
         },
         {
-            picture: computer,
+            picture: matikkamango,
             title: 'Matikka-mango',
             text: 'Matikka-mango on ensimmäinen varsinainen projektini ryhmässä. Minun käsialaani on tämän sovelluksen Bootstrap sekä kertotaulupeli',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
         },
         {
-            picture: computer,
+            picture: kentzu,
             title: 'Kentsun kertotaulunurkka',
             text: 'Kentsu on Mangon isoveli, mutta hieman pidemmälle vietynä. ',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
         },
         {
-            picture: skills,
+            picture: movie,
             title: 'Leffa-tietokanta',
             text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti, mutta varsinaisen kurssin ulkopuolella tein sille myös frontin.',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
         },
         {
-            picture: computer,
-            title: 'Matikka-mango',
-            text: 'Matikka-mango on ensimmäinen varsinainen projektini ryhmässä. Minun käsialaani on tämän sovelluksen Bootstrap sekä kertotaulupeli',
+            picture: crossfit,
+            title: 'Workout Diary',
+            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö.',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
         },
         {
-            picture: computer,
-            title: 'Matikka-mango',
+            picture: town,
+            title: 'My Traveller',
             text: 'Matikka-mango on ensimmäinen varsinainen projektini ryhmässä. Minun käsialaani on tämän sovelluksen Bootstrap sekä kertotaulupeli',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi'
