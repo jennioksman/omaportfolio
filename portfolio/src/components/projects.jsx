@@ -9,6 +9,8 @@ import kentzu from '../assets/kentzu.png'
 import movie from '../assets/movie.jpg'
 import crossfit from '../assets/crossfit.jpg'
 import town from '../assets/town.jpg'
+import bored from '../assets/bored.png'
+import tahmatassu from '../assets/tahmatassu.jpg'
 
 function Projects() {
 
@@ -54,14 +56,28 @@ function CardContainer() {
             picture: crossfit,
             title: 'Workout Diary',
             text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö.',
-            buttontext1: 'Demo',
+            buttontext1: 'Demo-video',
             buttontext2: 'Lähdekoodi'
         },
         {
             picture: town,
             title: 'My Traveller',
             text: 'Matikka-mango on ensimmäinen varsinainen projektini ryhmässä. Minun käsialaani on tämän sovelluksen Bootstrap sekä kertotaulupeli',
+            buttontext1: 'Demo-video',
+            buttontext2: 'Lähdekoodi'
+        },
+        {
+            picture: bored,
+            title: 'Bored API',
+            text: 'Bored API on yksinkertainen sovellus, joka hakee tylsistyneelle naiselle drinkkejä API-tietokannasta. Sovellus on osa dynaamisen webkehityksen kurssia.',
             buttontext1: 'Demo',
+            buttontext2: 'Lähdekoodi'
+        },
+        {
+            picture: tahmatassu,
+            title: 'Tahmatassu',
+            text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen.',
+            buttontext1: 'Demo-video',
             buttontext2: 'Lähdekoodi'
         },
     ]
