@@ -27,8 +27,9 @@ Sivustolta löydät:
 
 ## 🔍 Näkymä
 
-![Screenshot of the site](./assets/preview.jpg)  
-<sub>Kuvakaappaus etusivusta – kuva vaihda omalla tiedostollasi!</sub>
+![Screenshot of the site](./assets/etusivu.jpg) 
+![Screenshot of the site](./assets/projektisivu.jpg) 
+<sub>Kuvakaappaus etusivusta ja projektit-sivusta!</sub>
 
 ---
 
