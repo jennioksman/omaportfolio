@@ -6,11 +6,7 @@ Tervetuloa henkilökohtaiseen portfoliooni! 👋 Tämä projekti esittelee osaam
 
 ## 🧰 Teknologiat ja työkalut
 
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3)
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=react,js,css,bootstrap,git)](https://skillicons.dev)
 
 ---
 
@@ -21,14 +17,13 @@ Sivustolta löydät:
 - 🧍 **Kuka Jenni?** – lyhyt esittely minusta ja opiskeluistani.
 - 🧠 **Osaamiseni** – taitoni ja työkalut, joita hallitsen.
 - 🛠️ **Projektini** – kouluprojektit ja omat harrasteprojektit.
-- 📫 **Yhteydenotto** – kuinka minuun saa yhteyden.
 
 ---
 
 ## 🔍 Näkymä
 
-![Screenshot of the site](./assets/etusivu.jpg) 
-![Screenshot of the site](./assets/projektisivu.jpg) 
+![Screenshot of the site](portfolio/src/assets/etusivu.png) 
+![Screenshot of the site](portfolio/src/assets/projektisivu.png) 
 <sub>Kuvakaappaus etusivusta ja projektit-sivusta!</sub>
 
 ---
@@ -38,7 +33,7 @@ Sivustolta löydät:
 Jos haluat testata tätä projektia paikallisesti:
 
 ```bash
-git clone https://github.com/kayttajanimi/portfolio.git
+git clone https://github.com/jennioksman/omaportfolio.git
 cd portfolio
 npm install
 npm start
