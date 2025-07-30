@@ -1,4 +1,4 @@
-# 💻 Jenni Oksman Portfolio
+# 💻 Portfolio
 
 Tervetuloa henkilökohtaiseen portfoliooni! 👋 Tämä projekti esittelee osaamistani web-kehityksen, ohjelmoinnin ja IT-alan opintojen parista. Sivusto on vielä keskeneräinen. Se on rakennettu Reactilla ja Bootstrapilla, ja siinä hyödynnetään responsiivista suunnittelua sekä komponenttipohjaista arkkitehtuuria.
 
