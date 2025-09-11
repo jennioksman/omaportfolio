@@ -92,7 +92,7 @@ function CardContainer() {
             title: 'Tahmatassu',
             text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen. Sen hostaukseen käyutettiin Azuren virtuaalikonetta.',
             buttontext1: 'Demo-video',
-            link1: 'http://52.178.183.222/'
+            link1: 'https://unioulu-my.sharepoint.com/:v:/g/personal/c3okje00_students_oamk_fi/ETx8UV1se3lPmjW3BsmdB_IBBS6vGMx585f6DzztGGHfZw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NzehfR'
         },
     ]
     return(
