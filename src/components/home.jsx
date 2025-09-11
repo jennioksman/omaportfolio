@@ -70,7 +70,7 @@ function Cardie({ picture, title, text, buttontext }) {
         if (title === 'Projektini') {
             navigate('/projects');
         } else if (title === 'Kuka Jenni?') {
-            navigate('/about');
+            navigate('/me');
         } else if (title === 'Osaamiseni') {
             navigate('/skills');
         }
