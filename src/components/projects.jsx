@@ -84,7 +84,7 @@ function CardContainer() {
             text: 'Bored API on yksinkertainen sovellus, joka hakee tylsistyneelle naiselle drinkkejä API-tietokannasta. Sovellus on osa dynaamisen webkehityksen kurssia.',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi',
-            link1: '',
+            link1: 'https://getdrink.netlify.app/',
             link2: 'https://github.com/jennioksman/component_opendata'
         },
         {
