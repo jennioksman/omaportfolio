@@ -75,7 +75,7 @@ function CardContainer() {
             text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka bäkki on myös Firebase toteutus.',
             buttontext1: 'Demo-video',
             buttontext2: 'Lähdekoodi',
-            link1: '',
+            link1: 'https://www.youtube.com/watch?v=u216wPlCVJ8',
             link2: 'https://github.com/jennioksman/locationApp'
         },
         {
