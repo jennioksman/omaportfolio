@@ -120,6 +120,7 @@ function CardContainer() {
 }
 
 function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }) {
+
     return (
         <Card>
             <Card.Img className='cardimg' variant="top" src={picture} />
@@ -134,13 +135,16 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                     >
                         {buttontext1}
                     </Button>
-                    <Button 
-                        className="cardButton" 
-                        variant="primary"
-                        as='a' href={link2} target='_blank'
-                    >
-                        {buttontext2}
-                    </Button>
+                    { 
+                        buttontext2 && 
+                        <Button 
+                            className="cardButton" 
+                            variant="primary"
+                            as='a' href={link2} target='_blank'
+                        >
+                            {buttontext2}
+                        </Button>
+                    }
                 </div>
             </Card.Body>
         </Card>
