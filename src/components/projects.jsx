@@ -92,7 +92,7 @@ function CardContainer() {
             title: 'Tahmatassu',
             text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen. Sen hostaukseen käyutettiin Azuren virtuaalikonetta.',
             buttontext1: 'Demo-video',
-            link1: 'https://unioulu-my.sharepoint.com/:v:/g/personal/c3okje00_students_oamk_fi/ETx8UV1se3lPmjW3BsmdB_IBBS6vGMx585f6DzztGGHfZw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NzehfR'
+            link1: 'https://www.youtube.com/watch?v=JehIn-s7zfQ'
         },
     ]
     return(
@@ -135,7 +135,7 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                         {buttontext1}
                     </Button>
                     <Button 
-                        lassName="cardButton" 
+                        className="cardButton" 
                         variant="primary"
                         as='a' href={link2} target='_blank'
                     >
