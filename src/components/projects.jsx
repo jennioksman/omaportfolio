@@ -43,15 +43,6 @@ function CardContainer() {
             link2: 'https://github.com/SatanistiVuohi/TIK23SP-3-web'
         },
         {
-            picture: kentzu,
-            title: 'Kentsun kertotaulunurkka',
-            text: 'Kentsu on Mangon isoveli, mutta Reactilla ja Bootsrapilla toteutettuna.',
-            buttontext1: 'Demo',
-            buttontext2: 'Lähdekoodi',
-            link1: '',
-            link2: 'https://github.com/jennioksman/kentzu'
-        },
-        {
             picture: movie,
             title: 'Leffa-tietokanta',
             text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti. Suunnitelmissani on toteuttaa sille myös frontti.',
