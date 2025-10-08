@@ -47,6 +47,19 @@
   
 }
 
+.meImg {
+  max-width: 90%;
+
+}
+
+.akImg {
+  max-width: 60%;
+}
+
+.justified {
+  text-align: justify;
+}
+
 .footer {
   display: flex;
   justify-content: center;

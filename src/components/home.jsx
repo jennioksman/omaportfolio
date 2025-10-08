@@ -66,7 +66,6 @@ function Cardie({ picture, title, text, buttontext }) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        // Esimerkissä ohjataan aina projektit-sivulle, mutta voit käyttää eri osoitteita tarpeen mukaan
         if (title === 'Projektini') {
             navigate('/projects');
         } else if (title === 'Kuka Jenni?') {
