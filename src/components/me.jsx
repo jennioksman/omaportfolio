@@ -16,7 +16,9 @@ function Mie() {
                     <Col className='text-align-center'><h2>Tarinani - Matka hoitajasta koodariksi</h2></Col>
                 </Row>
                 <Row>
-                    <Col  xs={12} sm={6}><img className='meImg m-5' src={stetarit}/></Col>
+                    <Col  xs={12} sm={6} className='align-self-center'>
+                        <img className='meImg m-5' src={stetarit}/>
+                    </Col>
                     <Col xs={12} sm={6} className='align-self-center'>
                         <div className='m-5 justified'>
                            <p>Valmistuin unelma ammattiini kätilöski helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistopllisessa sairaalassa kätilönä. 
@@ -42,10 +44,14 @@ function Mie() {
                             
                         </div>
                     </Col>
-                    <Col><img className='meImg m-5' src={koodi}/></Col>
+                    <Col xs={12} sm={6} className='align-self-center'>
+                        <img className='meImg m-5' src={koodi}/>
+                    </Col>
                 </Row>
                 <Row>
-                    <Col><img className='meImg m-5' src={ux}/></Col>
+                    <Col xs={12} sm={6} className='align-self-center'>
+                        <img className='meImg m-5' src={ux}/>
+                    </Col>
                     <Col xs={12} sm={6} className='align-self-center'>
                         <div className='m-5 justified'>
                             <p>Suurin innostukseni suuntautuu frontend kehitykseen ja mobiiliohjelmointiin. Olen visuaalinen ihminen ja oman kädenjäljen näkeminen näytöllä tuottaa minulle suurta iloa. Lisäksi empatia on hyvin
@@ -71,7 +77,7 @@ function Mie() {
                             <img className='akImg' src={ak}/>
                         </div>
                     </Col>
-                    <Col>
+                    <Col xs={12} sm={6} className='align-self-center'>
                        <img className='meImg m-5' src={vapis}/>
                     </Col>
                 </Row>
