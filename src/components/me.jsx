@@ -16,10 +16,10 @@ function Mie() {
                     <Col className='text-align-center'><h2>Tarinani - Matka hoitajasta koodariksi</h2></Col>
                 </Row>
                 <Row>
-                    <Col  xs={12} sm={6} className='align-self-center'>
-                        <img className='meImg m-5' src={stetarit}/>
+                    <Col  xs={12} md={6} className='align-self-center'>
+                        <img className='meImg img-fluid m-3' src={stetarit}/>
                     </Col>
-                    <Col xs={12} sm={6} className='align-self-center'>
+                    <Col xs={12} md={6} className='align-self-center'>
                         <div className='m-5 justified'>
                            <p>Valmistuin unelma ammattiini kätilöski helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistopllisessa sairaalassa kätilönä. 
                                 Urani alkoi naistentautien vuodeosastolta, mistä siirryin synnytysosastolle. Synnytysosastolta siirryin sisäisen sijaisen tehtäviin 
@@ -34,7 +34,7 @@ function Mie() {
                     
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} className='align-self-center'>
+                    <Col xs={{order: 2}} md={{order: 1}} className='align-self-center'>
                         <div className='m-5 justified'>
                             <p>Ennen opintojen aloittamista testasin vähän koodaamista ja huomasin, että pidän siitä kovasti. Tunsin lapsenomaista riemua joka kerta kun onnistuin kirjoittamaan pätkän jotain toimivaa.</p>
                             <p>Tämä sama riemu on kannatellut minua läpi opintojen. Samalla huomasin, että vaikka kaikenlaiset ongelmat saivat minut vaihdilla harmaantumaan, ne myös sytyttivät jotain minussa. Palan halusta 
@@ -44,15 +44,15 @@ function Mie() {
                             
                         </div>
                     </Col>
-                    <Col xs={12} sm={6} className='align-self-center'>
-                        <img className='meImg m-5' src={koodi}/>
+                    <Col xs={12} md={6} className='align-self-center'>
+                        <img className='meImg img-fluid m-3' src={koodi}/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} className='align-self-center'>
-                        <img className='meImg m-5' src={ux}/>
+                    <Col xs={{order: 2}} md={{order: 1}} className='align-self-center'>
+                        <img className='meImg img-fluid m-3' src={ux}/>
                     </Col>
-                    <Col xs={12} sm={6} className='align-self-center'>
+                    <Col xs={12} md={6} className='align-self-center'>
                         <div className='m-5 justified'>
                             <p>Suurin innostukseni suuntautuu frontend kehitykseen ja mobiiliohjelmointiin. Olen visuaalinen ihminen ja oman kädenjäljen näkeminen näytöllä tuottaa minulle suurta iloa. Lisäksi empatia on hyvin
                                 perimmäinen osa minua, joten käyttäjäkokemuksen suunnittelu on minulle luontevaa.
@@ -65,7 +65,7 @@ function Mie() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} sm={6} className='align-self-center'>
+                    <Col xs={12} md={6} className='align-self-center'>
                         <div className='m-5 justified'>
                             <p>Vapaa-aikana nautin luonnosta, musiikista, käsitöistä ja äänikirjoista. Narun päästä käppäilee välillä suurempi, välillä pienempi kaveri. Myös ystävät ja perhe ovat minulle tärkeitä.
                                 Kerran kesässä olen käynyt retkeilemässä Suomen tai Ruotsin Lapissa. Yleensä on tarve päästä kiipeämään korkealle tunturiin ja ihailemaan maisemia. 
@@ -77,8 +77,8 @@ function Mie() {
                             <img className='akImg' src={ak}/>
                         </div>
                     </Col>
-                    <Col xs={12} sm={6} className='align-self-center'>
-                       <img className='meImg m-5' src={vapis}/>
+                    <Col xs={12} md={6} className='align-self-center'>
+                       <img className='meImg img-fluid m-3' src={vapis}/>
                     </Col>
                 </Row>
             </Container>
