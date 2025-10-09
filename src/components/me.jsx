@@ -16,8 +16,8 @@ function Mie() {
                     <Col className='text-align-center'><h2>Tarinani - Matka hoitajasta koodariksi</h2></Col>
                 </Row>
                 <Row>
-                    <Col  xs={12} md={6} className='p-3 align-self-center'>
-                        <img className='meImg img-fluid' src={stetarit}/>
+                    <Col  xs={12} md={6} className=''>
+                        <img className='meImg p-3 align-self-center img-fluid' src={stetarit}/>
                     </Col>
                     <Col xs={12} md={6} className=' p-3 align-self-center'>
                         <div className=' justified'>
