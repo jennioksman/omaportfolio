@@ -26,7 +26,7 @@ function Mie() {
                                 ja sain kiertää koko naistenklinikkaa. Pidin vaihtelevasta työstä kovasti, mutta vuorotyö ei ollut minua varten. 
                             </p>
                             <p>Opiskelin mielenterveys- ja päihdetyötä, minkä jälkeen siirryin Oulun kaupungin aikuisten avomielenterveyspalveluihin töihin. Pian huomasin,
-                                että vika ei ehkä niinkään ollut vuorotyössä, vaan minussa itsessäni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla työskentelevän veljeni 
+                                että vika ei ehkä niinkään ollut vuorotyössä, vaan totesin, ettei hoitoala yleensä ole minun juttuni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla työskentelevän veljeni 
                                 vinkistä päätin hakeutua opiskelemaan tietojenkäsittelyä.
                             </p>
                         </div>
