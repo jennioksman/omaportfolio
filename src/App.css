@@ -75,9 +75,17 @@ body {
   text-align: justify;
 }
 
+
+
 .footer {
   display: flex;
   justify-content: center;
   background-color: rgb(235, 235, 235);
   margin-top: 8%;
+}
+
+@media screen and (max-width: 767px) {
+    .setupper {
+       order: -1;
+}
 }
