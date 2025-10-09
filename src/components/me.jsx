@@ -21,7 +21,7 @@ function Mie() {
                     </Col>
                     <Col xs={12} md={6} className=' p-3 align-self-center'>
                         <div className=' justified'>
-                           <p>Valmistuin unelma ammattiini kätilöksi helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistollisessa sairaalassa kätilönä. 
+                           <p>Valmistuin unelma-ammattiini kätilöksi helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistollisessa sairaalassa kätilönä. 
                                 Urani alkoi naistentautien vuodeosastolta, mistä siirryin synnytysosastolle. Synnytysosastolta siirryin sisäisen sijaisen tehtäviin 
                                 ja sain kiertää koko naistenklinikkaa. Pidin vaihtelevasta työstä kovasti, mutta vuorotyö ei ollut minua varten. 
                             </p>

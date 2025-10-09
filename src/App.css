@@ -27,6 +27,7 @@
   border-radius: 5px;
   margin: 10px;
   padding: 5px;
+  box-shadow: 3px 3px 3px 3px rgb(188, 188, 188);
 }
 
 .cardimg {
@@ -57,8 +58,6 @@
 .justified {
   text-align: justify;
 }
-
-
 
 .footer {
   display: flex;
