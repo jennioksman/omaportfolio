@@ -11,7 +11,7 @@ import ak from '../assets/ak.png'
 function Mie() {
     return (
         <div>
-            <Container>
+            <Container fluid>
                 <Row className='text-center m-4'>
                     <Col className='text-align-center'><h2>Tarinani - Matka hoitajasta koodariksi</h2></Col>
                 </Row>
