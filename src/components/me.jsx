@@ -21,13 +21,15 @@ function Mie() {
                     </Col>
                     <Col xs={12} md={6} className=' p-3 align-self-center'>
                         <div className=' justified'>
-                           <p>Valmistuin unelma-ammattiini kätilöksi helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistollisessa sairaalassa kätilönä. 
-                                Urani alkoi naistentautien vuodeosastolta, mistä siirryin synnytysosastolle. Synnytysosastolta siirryin sisäisen sijaisen tehtäviin 
-                                ja sain kiertää koko naistenklinikkaa. Pidin vaihtelevasta työstä kovasti, mutta vuorotyö ei ollut minua varten. 
+                           <p>Vaikka kätilökoulun opiskelijatoverit vitsailivat aina, että minusta piti tulla insinööri, mutta eksyin ensimmäisenä aamuna väärälle puolelle tietä, valmistuin unelma-ammattiini kätilöksi 
+                            helmikuussa 2009. Siitä lähtien työskentelin Oulun yliopistollisessa sairaalassa kätilönä. Urani alkoi naistentautien vuodeosastolta, mistä siirryin synnytysosastolle. Synnytysosastolta
+                             siirryin sisäisen sijaisen tehtäviin ja sain kiertää koko naistenklinikkaa. Pidin vaihtelevasta työstä ja ammattitaidon laajentamisesta kovasti, mutta vuorotyö ei ollut minua varten.
+                                
                             </p>
-                            <p>Opiskelin mielenterveys- ja päihdetyötä, minkä jälkeen siirryin Oulun kaupungin aikuisten avomielenterveyspalveluihin töihin. Pian huomasin,
-                                että vika ei ehkä niinkään ollut vuorotyössä, vaan totesin, ettei hoitoala yleensä ole minun juttuni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla työskentelevän veljeni 
-                                vinkistä päätin hakeutua opiskelemaan tietojenkäsittelyä.
+                            <p>Opiskelin mielenterveys- ja päihdetyötä ja nuo opinnot sytyttivät halun oppia lisää ja lisää ja lisää. Opintojen jälkeen siirryin Oulun kaupungin aikuisten avomielenterveyspalveluihin 
+                                töihin. Pian huomasin, että vika ei ehkä niinkään ollut vuorotyössä, vaan totesin, ettei hoitoala yleensä olekaan minun juttuni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla 
+                                työskentelevän veljeni vinkistä päätin hakeutua opiskelemaan tietojenkäsittelyä.
+                                
                             </p>
                         </div>
                     </Col>

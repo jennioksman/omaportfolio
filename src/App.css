@@ -59,6 +59,10 @@
   text-align: justify;
 }
 
+ul > li {
+  font-size: 1.6rem;
+}
+
 .footer {
   display: flex;
   justify-content: center;

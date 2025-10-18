@@ -10,7 +10,9 @@ import movie from '../assets/movie.jpg'
 import crossfit from '../assets/crossfit.jpg'
 import town from '../assets/town.jpg'
 import bored from '../assets/bored.png'
+import btw from '../assets/btw.png'
 import tahmatassu from '../assets/tahmatassu.jpg'
+import pf from '../assets/pf.png'
 
 function Projects() {
 
@@ -45,8 +47,7 @@ function CardContainer() {
         {
             picture: movie,
             title: 'Leffa-tietokanta',
-            text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti. Suunnitelmissani on toteuttaa sille myös frontti.',
-            buttontext1: 'Demo',
+            text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti. TULOSSA: frontti ja demo',
             buttontext2: 'Lähdekoodi',
             link1: '',
             link2: 'https://github.com/jennioksman/movieAssignment'
@@ -54,8 +55,7 @@ function CardContainer() {
         {
             picture: crossfit,
             title: 'Workout Diary',
-            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, jonka bäkki on toteutettu Firebasella.',
-            buttontext1: 'Demo-video',
+            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, jonka bäkki on toteutettu Firebasella. TULOSSA: demo-video',
             buttontext2: 'Lähdekoodi',
             link1: '',
             link2: 'https://github.com/jennioksman/mobileFinal'
@@ -79,11 +79,25 @@ function CardContainer() {
             link2: 'https://github.com/jennioksman/component_opendata'
         },
         {
+            picture: btw,
+            title: 'Brake the Wall',
+            text: 'TULOSSA',
+            link1: 'https://getdrink.netlify.app/',
+            link2: 'https://github.com/jennioksman/component_opendata'
+        },
+        {
             picture: tahmatassu,
             title: 'Tahmatassu',
-            text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen. Sen hostaukseen käyutettiin Azuren virtuaalikonetta.',
+            text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen. Sen hostaukseen käytettiin Azuren virtuaalikonetta.',
             buttontext1: 'Demo-video',
             link1: 'https://www.youtube.com/watch?v=JehIn-s7zfQ'
+        },
+        {
+            picture: pf,
+            title: 'Portfoli',
+            text: 'Tämän sivuston totetus on ollut hauska matka. Pääni pursuaa ideoita siitä, mitä kaikkea tänne voisi vielä lisätä ja miten tätä voisi kehittää. Sivut päivittyvät jatkuvasti.',
+            buttontext2: 'Lähdekoodi',
+            link2: 'https://github.com/jennioksman/omaportfolio.git'
         },
     ]
     return(
@@ -119,13 +133,17 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{text}</Card.Text>
                 <div className='buttonDiv'>
-                    <Button 
-                        className="cardButton" 
-                        variant="primary"
-                        as='a' href={link1} target='_blank'
+                    
+                    { buttontext1 &&
+                        <Button
+                            className="cardButton" 
+                            variant="primary"
+                            as='a' href={link1} target='_blank'
                     >
                         {buttontext1}
-                    </Button>
+                        </Button>
+                    }
+                    
                     { 
                         buttontext2 && 
                         <Button 
