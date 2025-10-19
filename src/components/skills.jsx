@@ -6,11 +6,6 @@ import '../App.css'
 function Skills() {
   return (
     <Container fluid>
-      <Row className='text-center m-4'>
-        <Col>
-          <h4>Frontend</h4>
-        </Col>
-      </Row>
       <Row className='justify-content-center m-4'>
         <Col xs={12} className='text-center'>
           <div style={{ 
