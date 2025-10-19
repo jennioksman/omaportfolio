@@ -64,7 +64,7 @@ function CardContainer() {
             picture: town,
             title: 'My Traveller',
             text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka bäkki on myös Firebase toteutus.',
-            buttontext1: 'Demo-video',
+            buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://www.youtube.com/watch?v=u216wPlCVJ8',
             link2: 'https://github.com/jennioksman/locationApp'
@@ -81,15 +81,17 @@ function CardContainer() {
         {
             picture: btw,
             title: 'Brake the Wall',
-            text: 'TULOSSA',
-            link1: 'https://getdrink.netlify.app/',
-            link2: 'https://github.com/jennioksman/component_opendata'
+            text: 'Tämä pelin pätkä on tehty Unityllä tiiviissä yhtistyässä tekoälyn kanssa osana Tekoäly tietojenkäsittelyn työvälineenä - kurssia. Peli on yksinkertainen ammuntapeli, jossa pelaajan tavoitteena on rikkoa muuri.',
+            buttontext1: 'Demovideo',
+            buttontext2: 'Lähdekoodi',
+            link1: 'https://www.youtube.com/watch?v=APMNI3ZsXaA',
+            link2: 'https://github.com/jennioksman/Break-the-Wall'
         },
         {
             picture: tahmatassu,
             title: 'Tahmatassu',
             text: 'Kuvitteellisen eläinpuisto Tahmatassun kotisivu on toteutettu WordPressillä ja on toinen varsinainen projekti. Sivusto on monikielinen. Sen hostaukseen käytettiin Azuren virtuaalikonetta.',
-            buttontext1: 'Demo-video',
+            buttontext1: 'Demovideo',
             link1: 'https://www.youtube.com/watch?v=JehIn-s7zfQ'
         },
         {
