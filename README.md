@@ -18,14 +18,6 @@ Sivustolta löydät:
 
 ---
 
-## 🔍 Näkymä
-
-![Screenshot of the site](portfolio/src/assets/etusivu.png) 
-![Screenshot of the site](portfolio/src/assets/projektisivu.png) 
-<sub>Kuvakaappaus etusivusta ja projektit-sivusta!</sub>
-
----
-
 ## 🚀 Asennus ja käyttö
 
 Jos haluat testata tätä projektia paikallisesti:
@@ -34,5 +26,5 @@ Jos haluat testata tätä projektia paikallisesti:
 git clone https://github.com/jennioksman/omaportfolio.git
 cd portfolio
 npm install
-npm start
+npm run dev
 
