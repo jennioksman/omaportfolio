@@ -44,7 +44,7 @@ function Skills() {
               </div>
               <ul className='list-unstyled'>
                 <li>Python</li>
-                <li><i className="bi bi-javascript"></i>JavaScrip</li>
+                <li>JavaScript</li>
                 <li>C#</li>
               </ul>
               <div className='skillheader'> 
