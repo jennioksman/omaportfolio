@@ -25,9 +25,23 @@
 .skillheader {
   background-color: rgb(171, 171, 171);
   color: rgb(253, 253, 253);
-  padding: 10px;
-  border-radius: 5px;
   margin-bottom: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.skillheader > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 120px; /* limit height so it doesn't grow too big */
+  object-fit: cover; /* crop/fill while preserving aspect ratio */
+  border-radius: 5px 5px 0 0;
+}
+
+.skillheader > h3 {
+  text-align: center;
+  padding: 10px;
 }
 
 .card {
@@ -67,8 +81,10 @@
   text-align: justify;
 }
 
-ul > li {
-  font-size: 1.6rem;
+ul {
+  font-size: 1rem;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .footer {
