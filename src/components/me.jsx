@@ -27,7 +27,7 @@ function Mie() {
                                 
                             </p>
                             <p>Opiskelin mielenterveys- ja päihdetyötä ja nuo opinnot sytyttivät halun oppia lisää ja lisää ja lisää. Opintojen jälkeen siirryin Oulun kaupungin aikuisten avomielenterveyspalveluihin 
-                                töihin. Pian huomasin, että vika ei ehkä niinkään ollut vuorotyössä, vaan totesin, ettei hoitoala yleensä olekaan minun juttuni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla 
+                                töihin. Pian huomasin, että vika ei ehkä niinkään ollut pelkästään vuorotyössä, vaan totesin, ettei hoitoala yleensä olekaan minun juttuni. Mietin kuumeisesti, mikä minusta tulee isona. IT-alalla 
                                 työskentelevän veljeni vinkistä päätin hakeutua opiskelemaan tietojenkäsittelyä.
                                 
                             </p>

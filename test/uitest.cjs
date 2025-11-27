@@ -8,7 +8,9 @@ describe('toka resti', function() {
   let driver
   let vars
   beforeEach(async function() {
-    const options = new firefox.Options().headless()   // ⬅ headless Firefox
+    const options = new firefox.Options()
+    options.addArguments('-headless')
+
     driver = await new Builder()
       .forBrowser('firefox')
       .setFirefoxOptions(options)
@@ -17,7 +19,7 @@ describe('toka resti', function() {
   })
 
   afterEach(async function() {
-    if (driver) {          // ⬅ älä yritä quitata, jos driveria ei ole
+    if (driver) {          
       await driver.quit()
     }
   })
