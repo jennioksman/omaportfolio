@@ -37,7 +37,7 @@ function Home() {
                 <Row>
                     <Col>
                         <div className='homeHeader'>
-                            <h2>Tervelutola!</h2>
+                            <h2>Tervetuloa!</h2>
                             <p>Hienoa, että löysit portfoliooni! Esittelen tässä sivulla itseni ja kerron osaamisestani.</p>
                         </div>
                     </Col>
