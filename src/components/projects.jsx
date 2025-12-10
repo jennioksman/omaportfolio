@@ -97,6 +97,7 @@ function CardContainer() {
             picture: pf,
             title: 'Portfolio',
             text: 'Tämän sivuston totetus on ollut hauska matka. Pääni pursuaa ideoita siitä, mitä kaikkea tänne voisi vielä lisätä ja miten tätä voisi kehittää. Sivut päivittyvät jatkuvasti.',
+            buttontext1: 'Lisätietoa',
             buttontext2: 'Lähdekoodi',
             link2: 'https://github.com/jennioksman/omaportfolio.git'
         },

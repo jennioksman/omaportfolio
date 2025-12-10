@@ -94,6 +94,18 @@ ul {
   margin-top: 8%;
 }
 
+.contact {
+  padding: 0;
+  flex-direction: column;
+}
+
+.contact a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
 @media screen and (max-width: 767px) {
     .setupper {
        order: -1;

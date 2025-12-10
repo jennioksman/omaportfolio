@@ -2,6 +2,7 @@
 import { createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import './App.css'
 import Projects from './components/projects.jsx'
 import Home from './components/home.jsx'
@@ -99,8 +100,17 @@ function Footer() {
                 <hr className="clearfix w-100 d-md-none pb-0"/>
             </div>
         </div>
-        <div className="footer-copyright text-center py-3">© 2025 Copyright:
-            <p>Jenni Oksman</p>
+        <div className="footer-copyright text-center py-3">© 2025 Copyright: Jenni Oksman
+            <ul className='contact d-flex  justify-content-center mt-2'>
+                <li className='list-unstyled'>
+                    <a href="mailto:jenni.oksman@gmail.com">Ota yhteyttä!</a>
+                </li>
+                <li className='list-unstyled'>
+                  <a href="https://www.linkedin.com/in/jenni-oksman-63735b266" target="_blank" rel="noreferrer">
+                        <AiFillLinkedin size={30} />
+                  </a>
+                </li>
+            </ul>
         </div>
       </footer>
     </div>
