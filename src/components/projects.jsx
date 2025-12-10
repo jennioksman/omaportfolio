@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import Container from 'react-bootstrap/Container'
+import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
@@ -17,7 +19,7 @@ function Projects() {
 
     return (
         <div>
-            <CardContainer/>
+            <CardContainer />
         </div>
     )
 }
@@ -102,7 +104,7 @@ function CardContainer() {
             link2: 'https://github.com/jennioksman/omaportfolio.git'
         },
     ]
-    return(
+    return (
         <div>
             <Container>
                 <Row>
@@ -123,43 +125,102 @@ function CardContainer() {
             </Container>
         </div>
     )
-    
+
 }
 
 function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }) {
 
+    const [modalShow, setModalShow] = useState(false);
+
     return (
-        <Card>
-            <Card.Img className='cardimg' variant="top" src={picture} />
-            <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{text}</Card.Text>
-                <div className='buttonDiv'>
-                    
-                    { buttontext1 &&
-                        <Button
-                            className="cardButton" 
-                            variant="primary"
-                            as='a' href={link1} target='_blank'
-                    >
-                        {buttontext1}
-                        </Button>
-                    }
-                    
-                    { 
-                        buttontext2 && 
-                        <Button 
-                            className="cardButton" 
-                            variant="primary"
-                            as='a' href={link2} target='_blank'
-                        >
-                            {buttontext2}
-                        </Button>
-                    }
-                </div>
-            </Card.Body>
-        </Card>
+        <>
+            <Card>
+                <Card.Img className='cardimg' variant="top" src={picture} />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{text}</Card.Text>
+                    <div className='buttonDiv'>
+
+                        {
+                            buttontext1 === 'Lisätietoa' ? (
+                                <Button
+                                    className="cardButton"
+                                    variant="primary"
+                                    onClick={() => setModalShow(true)}
+                                >
+                                    {buttontext1}
+                                </Button>
+                            ) : (
+                                buttontext1 &&
+                                <Button
+                                    className="cardButton"
+                                    variant="primary"
+                                    as='a' href={link1} target='_blank'
+                                >
+                                    {buttontext1}
+                                </Button>
+                            )
+
+                        }
+                        {
+                            buttontext2 &&
+                            <Button
+                                className="cardButton"
+                                variant="primary"
+                                as='a' href={link2} target='_blank'
+                            >
+                                {buttontext2}
+                            </Button>
+                        }
+                    </div>
+                </Card.Body>
+            </Card>
+            <InfoModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
+        </>
     )
 }
+
+
+function InfoModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Tietoa tästä sivustosta
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                
+                <p>
+                    Tämä sivusto on rakennettu Reactilla ja muotoilussa on hyödynnetty Bootsrap-kirjastoa.
+                    Johtavana ajatuksena on ollut Less is more. Halusin pitää sivusto yksinkertaisena ja selkeänä, 
+                    jotta sisältö pääsee parhaiten esille. 
+                </p>
+                <p>
+                    Tällä sivustolla ja projekteissani käyttämäni kuvat ovat joko omiani, 
+                    tekoälyn generoimia tai Pixabayn ilmaisen lisenssin kuvia. Videoissa ja peleissä 
+                    käyttämäni musiikki on tekoälyllä tehtyä ja peräisin Epidemic Soundista. 
+                </p>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button 
+                    className="cardButton" 
+                    onClick={props.onHide}>
+                        Sulje
+                </Button>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
+
 
 export default Projects
