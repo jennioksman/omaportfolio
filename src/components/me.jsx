@@ -69,7 +69,7 @@ function Mie() {
                 <Row>
                     <Col xs={12} md={6} className='p-3 align-self-center'>
                         <div className=' justified'>
-                            <p>Vapaa-aikana nautin luonnosta, musiikista, käsitöistä ja äänikirjoista. Narun päästä käppäilee välillä suurempi, välillä pienempi kaveri. Myös ystävät ja perhe ovat minulle tärkeitä.
+                            <p>Vapaa-aikana nautin luonnosta, musiikista, käsitöistä ja äänikirjoista. Narun päässä käppäilee välillä suurempi, välillä pienempi kaveri. Myös ystävät ja perhe ovat minulle tärkeitä.
                                 Kerran kesässä olen käynyt retkeilemässä Suomen tai Ruotsin Lapissa. Yleensä on tarve päästä kiipeämään korkealle tunturiin ja ihailemaan maisemia. 
                             </p>
                             <p>Soitto- ja lauluharrastuksen aloitin aikuisena. On ollut mahtavaa huomata, että aivot ja kädet oppivat uutta vielä keski-iän kynnykselläkin. Talvilajit kuten lumilautailu ja hiihto
