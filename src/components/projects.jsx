@@ -56,7 +56,7 @@ function CardContainer() {
         {
             picture: crossfit,
             title: 'Workout Diary',
-            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, jonka bäkki on toteutettu Firebasella. TULOSSA: demo-video',
+            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, joka on toteutettu React Nativella, bäkki on toteutettu Firebasella. Muotoilussa on käytetty Material UI -kirjastoa.',
             buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://www.youtube.com/watch?v=OMc2aFBnMsk',
@@ -65,7 +65,7 @@ function CardContainer() {
         {
             picture: town,
             title: 'My Traveller',
-            text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka bäkki on myös Firebase toteutus.',
+            text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka bäkki on myös Firebase toteutus ja frontti on tehty React Nativella. Muotoilu niin ikään Material UI -kirjastolla.',
             buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://www.youtube.com/watch?v=u216wPlCVJ8',
