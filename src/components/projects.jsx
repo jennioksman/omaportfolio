@@ -57,8 +57,9 @@ function CardContainer() {
             picture: crossfit,
             title: 'Workout Diary',
             text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, jonka bäkki on toteutettu Firebasella. TULOSSA: demo-video',
+            buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
-            link1: '',
+            link1: 'https://www.youtube.com/watch?v=OMc2aFBnMsk',
             link2: 'https://github.com/jennioksman/mobileFinal'
         },
         {
