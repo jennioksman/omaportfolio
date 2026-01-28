@@ -48,7 +48,7 @@ function CardContainer() {
         {
             picture: movie,
             title: 'Leffa-tietokanta',
-            text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti. TULOSSA: frontti ja demo',
+            text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti ja backend-kurssin loppu työ. Myöhemmin olen alkanut kehittää siihen myös fronttia. TULOSSA: frontti ja demo',
             buttontext2: 'Lähdekoodi',
             link1: '',
             link2: 'https://github.com/jennioksman/movieAssignment'
@@ -56,7 +56,7 @@ function CardContainer() {
         {
             picture: crossfit,
             title: 'Workout Diary',
-            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, joka on toteutettu React Nativella, bäkki on toteutettu Firebasella. Muotoilussa on käytetty Material UI -kirjastoa.',
+            text: 'Workout Diary oli ensimmäinen full-stack-projektini. Se oli mobiilisuunnittelu- ja -ohjelmointi-kurssin lopputyö, joka on toteutettu React Nativella, tietokanta on toteutettu Firebasella. Muotoilussa on käytetty Material UI -kirjastoa.',
             buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://www.youtube.com/watch?v=OMc2aFBnMsk',
@@ -65,7 +65,7 @@ function CardContainer() {
         {
             picture: town,
             title: 'My Traveller',
-            text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka bäkki on myös Firebase toteutus ja frontti on tehty React Nativella. Muotoilu niin ikään Material UI -kirjastolla.',
+            text: 'My Traveller on mobiilikurssin toisen osan lopputyö. Se on niin ikään full-stack-projekti, jonka tietokanta on myös Firebase toteutus ja frontti on tehty React Nativella. Muotoilu niin ikään Material UI -kirjastolla.',
             buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://www.youtube.com/watch?v=u216wPlCVJ8',
@@ -74,7 +74,7 @@ function CardContainer() {
         {
             picture: bored,
             title: 'Bored API',
-            text: 'Bored API on yksinkertainen sovellus, joka hakee tylsistyneelle naiselle drinkkejä API-tietokannasta. Sovellus on osa dynaamisen webkehityksen kurssia.',
+            text: 'Bored API on yksinkertainen sovellus, joka hakee tylsistyneelle naiselle drinkkejä avoimen datan palvelusta. Sovellus on osa dynaamisen webkehityksen kurssia.',
             buttontext1: 'Demo',
             buttontext2: 'Lähdekoodi',
             link1: 'https://getdrink.netlify.app/',
@@ -82,7 +82,7 @@ function CardContainer() {
         },
         {
             picture: btw,
-            title: 'Brake the Wall',
+            title: 'Break the Wall',
             text: 'Tämä pelin pätkä on tehty Unityllä tiiviissä yhtistyässä tekoälyn kanssa osana Tekoäly tietojenkäsittelyn työvälineenä - kurssia. Peli on yksinkertainen ammuntapeli, jossa pelaajan tavoitteena on rikkoa muuri.',
             buttontext1: 'Demovideo',
             buttontext2: 'Lähdekoodi',
