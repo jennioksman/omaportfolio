@@ -16,6 +16,11 @@ import tahmatassu from '../assets/tahmatassu.jpg'
 import pf from '../assets/pf.png'
 import appi from '../assets/nepsysovellus.png'
 import { ModalBody, ModalTitle } from 'react-bootstrap'
+import dbaddedm from '../assets/dbaddedm.png'
+import dbaddmovie from '../assets/dbaddmovie.png'
+import dbmovieadded from '../assets/dbmovieadded.png'
+import dbmovies from '../assets/dbmovies.png'
+import dbmoviesb from '../assets/dbmoviesb.png'
 
 function Projects() {
 
@@ -49,11 +54,25 @@ function CardContainer() {
         },
         {
             picture: movie,
-            title: 'Leffa-tietokanta',
-            text: 'Leffa-tietokanta on enesimmäinen bäkkiprojekti ja backend-kurssin loppu työ. Myöhemmin olen alkanut kehittää siihen myös fronttia. TULOSSA: frontti ja demo',
+            title: 'Leffatietokanta',
+            text: 'Leffatietokanta on ensimmäinen bäkkiprojekti ja backend-kurssin loppu työ. Myöhemmin olen alkanut kehittää siihen myös fronttia. Projekti jatkuu hitaasti, mutta varmasti.',
+            buttontext1: 'Lisätietoa',
             buttontext2: 'Lähdekoodi',
-            link1: '',
-            link2: 'https://github.com/jennioksman/movieAssignment'
+            link2: 'https://github.com/jennioksman/movieAssignment',
+            ModalTitle: 'Tietoa tästä sivustosta',
+            ModalBody: [
+                { type: "p", text: "Leffatietokannassa on nyt ensimmäiset toimivat api-kutsut. Muotoilu on vielä keskeneräinen. Alla muutama kuvakaappaus tämänhetkisestä toiminnallisuudesta." },
+
+                { type: "p", text: "Movies-sivulle haetaan tietokannasta kaikki elokuvat listaksi." },
+                { type: "img", src: dbmovies, alt: "Movies-sivu / elokuvalista" },
+                { type: "img", src: dbmoviesb, alt: "Movies-sivu / elokuvalista" },
+
+                { type: "p", text: "Myös lomake elokuvan lisäämiseen on valmis." },
+                { type: "img", src: dbaddmovie, alt: "Elokuvan lisäyslomake" },
+
+                { type: "p", text: "Lopuksi vielä päivitetty elokuvalistaus viimeisen lisäyksen jälkeen." },
+                { type: "img", src: dbmovieadded, alt: "Päivitetty elokuvalista" }
+            ]
         },
         {
             picture: crossfit,
@@ -108,20 +127,22 @@ function CardContainer() {
             ModalTitle: 'Tietoa tästä sivustosta',
             ModalBody: [
                 'Tämä sivusto on rakennettu Reactilla ja muotoilussa on hyödynnetty Bootsrap-kirjastoa.Johtavana ajatuksena on ollut Less is more. Halusin pitää sivusto yksinkertaisena ja selkeänä, jotta sisältö pääsee parhaiten esille.',
-                'Tällä sivustolla ja projekteissani käyttämäni kuvat ovat joko omiani, tekoälyn generoimia tai Pixabayn ilmaisen lisenssin kuvia. Videoissa ja peleissä käyttämäni musiikki on tekoälyllä tehtyä ja peräisin Epidemic Soundista.' 
+                'Tällä sivustolla ja projekteissani käyttämäni kuvat ovat joko omiani, tekoälyn generoimia tai Pixabayn ilmaisen lisenssin kuvia. Videoissa ja peleissä käyttämäni musiikki on tekoälyllä tehtyä ja peräisin Epidemic Soundista.'
             ]
         },
-        {   picture: appi,
+        {
+            picture: appi,
             title: 'NeuroNavi',
             text: 'NeuroNavi on opinnäytetyöni. Se on erityisesti neuromoninaisille suunnattu sovellus, joka toimii arjen ja opiskelun tukena.',
             buttontext1: 'Lisätietoa',
             ModalTitle: 'NeuroNavi - Nepsysovellus',
             ModalBody: [
-                'NeuroNavi on opinnäytetyöni. Se on palvelumuotoiluprojekti, jossa suunnittelin erityisesti neuromoninaisille suunnattun sovelluksen arjen ja opiskelun tueksi. ',
-                'Olen hyödyntänyt suunnittelutyössä sekä palvelumuotoilun menetelmiä että mielenterveystyön kokemustani. Suunnittelutyö lähti liikkelle kyselyllä, jossa kartoitettiin millaisia sovelluksia ja työkaluja ihmiset ovat käyttäneet ja mitä mieltä he ovat niistä olleet.'
+                'NeuroNavi on opinnäytetyöni. Se on palvelumuotoiluprojekti, jossa suunnittelen erityisesti neuromoninaisille suunnattua sovellusta arjen ja opiskelun tueksi. Projekti lähti tarpeesta kehittää suomenkielinen sovellus, joka yhdistää erilaisia ominaisuuksia toimivaksi kokonaisuudeksi. ',
+                'Olen hyödyntänyt suunnittelutyössä sekä palvelumuotoilun menetelmiä että mielenterveystyön kokemustani. Suunnittelutyö lähti liikkeelle kyselyllä, jossa kartoitettiin keskeisiä oireita ja haasteita arjenhallina ja opiskelun kannalta sekä millaisia sovelluksia ja työkaluja ihmiset ovat käyttäneet ja mitä mieltä he ovat niistä olleet. ',
+                'Kyselyn pohjalta toteutettiin työpaja, jonka tavoitteena oli ideoida ratkaisuja keskeisimpiin haasteisiin. Työpajassa saatiin paljon hyviä ideoita. Niin kirjallisuus, aiempi työkokemukseni, kysely kun työpajakin toistivat samat haasteet. Näiden pohjalta olen aloittanut low-fi prototyypin suunnittelun. Sovelluksen pohjana on useita kalenterisovelluksia yhdistävä kalenteri ja sen lisäksi toimintoja aloittamisen, muistamisen, motivoinnin ja hyvinvoinnin tueksi.'
             ]
         }]
-    
+
     return (
         <div>
             <Container>
@@ -138,7 +159,7 @@ function CardContainer() {
 
 }
 
-function Cardie({card}) {
+function Cardie({ card }) {
     const { picture, title, text, buttontext1, buttontext2, link1, link2, ModalTitle, ModalBody } = card;
 
     const [modalShow, setModalShow] = useState(false);
@@ -146,8 +167,8 @@ function Cardie({card}) {
     const openModalFor = (card) => {
         setSelectedCard(card)
         setModalShow(true)
-  }
-    
+    }
+
 
     return (
         <>
@@ -203,7 +224,10 @@ function Cardie({card}) {
 }
 
 
-function InfoModal({title, body, ...props}) {
+function InfoModal({ title, body, ...props }) {
+
+    const isBlocks = Array.isArray(body) && body.length > 0 && typeof body[0] === "object";
+
     return (
         <Modal
             {...props}
@@ -217,18 +241,34 @@ function InfoModal({title, body, ...props}) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                {Array.isArray(body) 
-                    ? body.map((p, i) => <p key={i}>{p}</p>)
-                    : body
-                    ? <p>{body}</p>
-                    : <p>Ei lisätietoa saatavilla.</p>
-                }
+                {isBlocks ? (
+                    body.map((item, i) => {
+                        if (item.type === "img") {
+                            return (
+                                <img
+                                    key={i}
+                                    src={item.src}
+                                    alt={item.alt || ""}
+                                    className="img-fluid rounded my-3"
+                                />
+                            );
+                        }
+                        // default: paragraph
+                        return <p key={i}>{item.text}</p>;
+                    })
+                ) : Array.isArray(body) ? (
+                    body.map((p, i) => <p key={i}>{p}</p>)
+                ) : body ? (
+                    <p>{body}</p>
+                ) : (
+                    <p>Ei lisätietoa saatavilla.</p>
+                )}
             </Modal.Body>
             <Modal.Footer>
-                <Button 
-                    className="cardButton" 
+                <Button
+                    className="cardButton"
                     onClick={props.onHide}>
-                        Sulje
+                    Sulje
                 </Button>
             </Modal.Footer>
         </Modal>
