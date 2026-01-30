@@ -14,6 +14,8 @@ import bored from '../assets/bored.png'
 import btw from '../assets/btw.png'
 import tahmatassu from '../assets/tahmatassu.jpg'
 import pf from '../assets/pf.png'
+import appi from '../assets/nepsysovellus.png'
+import { ModalBody, ModalTitle } from 'react-bootstrap'
 
 function Projects() {
 
@@ -102,24 +104,31 @@ function CardContainer() {
             text: 'Tämän sivuston totetus on ollut hauska matka. Pääni pursuaa ideoita siitä, mitä kaikkea tänne voisi vielä lisätä ja miten tätä voisi kehittää. Sivut päivittyvät jatkuvasti.',
             buttontext1: 'Lisätietoa',
             buttontext2: 'Lähdekoodi',
-            link2: 'https://github.com/jennioksman/omaportfolio.git'
+            link2: 'https://github.com/jennioksman/omaportfolio.git',
+            ModalTitle: 'Tietoa tästä sivustosta',
+            ModalBody: [
+                'Tämä sivusto on rakennettu Reactilla ja muotoilussa on hyödynnetty Bootsrap-kirjastoa.Johtavana ajatuksena on ollut Less is more. Halusin pitää sivusto yksinkertaisena ja selkeänä, jotta sisältö pääsee parhaiten esille.',
+                'Tällä sivustolla ja projekteissani käyttämäni kuvat ovat joko omiani, tekoälyn generoimia tai Pixabayn ilmaisen lisenssin kuvia. Videoissa ja peleissä käyttämäni musiikki on tekoälyllä tehtyä ja peräisin Epidemic Soundista.' 
+            ]
         },
-    ]
+        {   picture: appi,
+            title: 'NeuroNavi',
+            text: 'NeuroNavi on opinnäytetyöni. Se on erityisesti neuromoninaisille suunnattu sovellus, joka toimii arjen ja opiskelun tukena.',
+            buttontext1: 'Lisätietoa',
+            ModalTitle: 'NeuroNavi - Nepsysovellus',
+            ModalBody: [
+                'NeuroNavi on opinnäytetyöni. Se on palvelumuotoiluprojekti, jossa suunnittelin erityisesti neuromoninaisille suunnattun sovelluksen arjen ja opiskelun tueksi. ',
+                'Olen hyödyntänyt suunnittelutyössä sekä palvelumuotoilun menetelmiä että mielenterveystyön kokemustani. Suunnittelutyö lähti liikkelle kyselyllä, jossa kartoitettiin millaisia sovelluksia ja työkaluja ihmiset ovat käyttäneet ja mitä mieltä he ovat niistä olleet.'
+            ]
+        }]
+    
     return (
         <div>
             <Container>
                 <Row>
                     {projectCardData.map((card, index) => (
                         <Col key={index} xs={12} sm={6} lg={4}>
-                            <Cardie
-                                picture={card.picture}
-                                title={card.title}
-                                text={card.text}
-                                buttontext1={card.buttontext1}
-                                buttontext2={card.buttontext2}
-                                link1={card.link1}
-                                link2={card.link2}
-                            />
+                            <Cardie card={card} />
                         </Col>
                     ))}
                 </Row>
@@ -129,9 +138,16 @@ function CardContainer() {
 
 }
 
-function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }) {
+function Cardie({card}) {
+    const { picture, title, text, buttontext1, buttontext2, link1, link2, ModalTitle, ModalBody } = card;
 
     const [modalShow, setModalShow] = useState(false);
+
+    const openModalFor = (card) => {
+        setSelectedCard(card)
+        setModalShow(true)
+  }
+    
 
     return (
         <>
@@ -140,12 +156,12 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{text}</Card.Text>
-                    <div className='buttonDiv'>
+                    <div className="buttonDiv">
 
                         {
                             buttontext1 === 'Lisätietoa' ? (
                                 <Button
-                                    className="cardButton"
+                                    className="cardButton me-3 mb-2"
                                     variant="primary"
                                     onClick={() => setModalShow(true)}
                                 >
@@ -154,7 +170,7 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                             ) : (
                                 buttontext1 &&
                                 <Button
-                                    className="cardButton"
+                                    className="cardButton me-3 mb-2"
                                     variant="primary"
                                     as='a' href={link1} target='_blank'
                                 >
@@ -166,7 +182,7 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
                         {
                             buttontext2 &&
                             <Button
-                                className="cardButton"
+                                className="cardButton me-3 mb-2"
                                 variant="primary"
                                 as='a' href={link2} target='_blank'
                             >
@@ -179,13 +195,15 @@ function Cardie({ picture, title, text, buttontext1, buttontext2, link1, link2 }
             <InfoModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
+                title={ModalTitle}
+                body={ModalBody}
             />
         </>
     )
 }
 
 
-function InfoModal(props) {
+function InfoModal({title, body, ...props}) {
     return (
         <Modal
             {...props}
@@ -195,21 +213,16 @@ function InfoModal(props) {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Tietoa tästä sivustosta
+                    {title}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                
-                <p>
-                    Tämä sivusto on rakennettu Reactilla ja muotoilussa on hyödynnetty Bootsrap-kirjastoa.
-                    Johtavana ajatuksena on ollut Less is more. Halusin pitää sivusto yksinkertaisena ja selkeänä, 
-                    jotta sisältö pääsee parhaiten esille. 
-                </p>
-                <p>
-                    Tällä sivustolla ja projekteissani käyttämäni kuvat ovat joko omiani, 
-                    tekoälyn generoimia tai Pixabayn ilmaisen lisenssin kuvia. Videoissa ja peleissä 
-                    käyttämäni musiikki on tekoälyllä tehtyä ja peräisin Epidemic Soundista. 
-                </p>
+                {Array.isArray(body) 
+                    ? body.map((p, i) => <p key={i}>{p}</p>)
+                    : body
+                    ? <p>{body}</p>
+                    : <p>Ei lisätietoa saatavilla.</p>
+                }
             </Modal.Body>
             <Modal.Footer>
                 <Button 

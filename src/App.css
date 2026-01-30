@@ -60,13 +60,11 @@
   background-color: rgb(235, 235, 235);
   color: black;
   border: 1px solid black;
-  margin: 5%;
 }
 
 .buttonDiv {
   display: flex;
   flex-direction: row;
-  
 }
 
 .meImg {
@@ -109,5 +107,17 @@ ul {
 @media screen and (max-width: 767px) {
     .setupper {
        order: -1;
+  }
 }
+/* Alle 676px: napit allekkain */
+@media (min-width: 575px) and (max-width: 769.98px) {
+  .buttonDiv {
+    flex-direction: column;
+  }
+
+  .buttonDiv .cardButton {
+    width: 100%;
+  }
 }
+
+
