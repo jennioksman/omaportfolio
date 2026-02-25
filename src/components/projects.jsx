@@ -21,6 +21,7 @@ import dbaddmovie from '../assets/dbaddmovie.png'
 import dbmovieadded from '../assets/dbmovieadded.png'
 import dbmovies from '../assets/dbmovies.png'
 import dbmoviesb from '../assets/dbmoviesb.png'
+import titanic from '../assets/titanic.jpg'
 
 function Projects() {
 
@@ -141,7 +142,17 @@ function CardContainer() {
                 'Olen hyödyntänyt suunnittelutyössä sekä palvelumuotoilun menetelmiä että mielenterveystyön kokemustani. Suunnittelutyö lähti liikkeelle kyselyllä, jossa kartoitettiin keskeisiä oireita ja haasteita arjenhallina ja opiskelun kannalta sekä millaisia sovelluksia ja työkaluja ihmiset ovat käyttäneet ja mitä mieltä he ovat niistä olleet. ',
                 'Kyselyn pohjalta toteutettiin työpaja, jonka tavoitteena oli ideoida ratkaisuja keskeisimpiin haasteisiin. Työpajassa saatiin paljon hyviä ideoita. Niin kirjallisuus, aiempi työkokemukseni, kysely kun työpajakin toistivat samat haasteet. Näiden pohjalta olen aloittanut low-fi prototyypin suunnittelun. Sovelluksen pohjana on useita kalenterisovelluksia yhdistävä kalenteri ja sen lisäksi toimintoja aloittamisen, muistamisen, motivoinnin ja hyvinvoinnin tueksi.'
             ]
-        }]
+        },
+        {
+            picture: titanic,
+            title: 'Data-analyysi: Titanic',
+            text: 'Tämä sivu on Pythonin MathPlotlibillä toteutettu data-analyysi Titanic-tiedosta. Analyysissä on käytetty Pandas-kirjastoa datan käsittelyyn ja Matplotlibia visualisointiin. Webtoteutus on tehty Streamlitillä.',
+            buttontext1: 'Demo',
+            buttontext2: 'Lähdekoodi',
+            link1: 'https://is7awztwjax5vt5dxiztgt.streamlit.app/',
+            link2: 'https://github.com/jennioksman/titanic_data/blob/main/titanic.py'
+        }
+    ]
 
     return (
         <div>
